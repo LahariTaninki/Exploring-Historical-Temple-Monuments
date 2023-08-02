@@ -22,7 +22,7 @@ def direct(request):
     }
     
     #border for india
-    layer1 = folium.GeoJson(data=(open("C:/Users/tanin/Downloads/mini_project (2)/mini_project/Project/Temple/templates/Temple/states_india.geojson", 'r').read()),name="India",style_function=lambda x:borderStyle).add_to(m)
+    layer1 = folium.GeoJson(data=(open("C:/Users/HP/Desktop/mini_project/Temple/Desktop/templates/Desktop/states_india.geojson", 'r').read()),name="India",style_function=lambda x:borderStyle).add_to(m)
 
     #full screen button in map
     Fullscreen(position='topright',title='Expand me',title_cancel='Exit me',force_separate_button=True).add_to(m)
